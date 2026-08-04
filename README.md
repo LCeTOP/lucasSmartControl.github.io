@@ -1,3 +1,3 @@
 ATIVIDADE:
 FEITO:
-Esqueleto da tela de login do projeto Smart Control.
+Esqueleto do projeto: Smart Control
