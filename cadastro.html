@@ -1,1 +1,90 @@
-<h1>TESTE</h1>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cadastro - Smart Control</title>
+</head>
+<body>
+
+<header>
+<img src="assets/images/LOGO.png" alt="Logo Smart Control" width="120">
+<h1>Smart Control</h1>
+<h2>Cadastro de Usuário</h2>
+</header>
+
+<main>
+
+<form action="dashboard.html">
+
+<p>
+<label for="nome">Nome Completo:</label><br>
+<input
+type="text"
+id="nome"
+name="nome"
+required>
+</p>
+
+<p>
+<label for="email">E-mail Corporativo:</label><br>
+<input
+type="email"
+id="email"
+name="email"
+placeholder="exemplo@empresa.com"
+required>
+</p>
+
+<p>
+<label for="senha">Senha:</label><br>
+<input
+type="password"
+id="senha"
+name="senha"
+minlength="8"
+required>
+</p>
+
+<p>
+<label for="nivel">Nível de Acesso:</label><br>
+<select id="nivel" name="nivel" required>
+<option value="">Selecione</option>
+<option value="administrador">Administrador</option>
+<option value="gerente">Gerente</option>
+<option value="operador">Operador</option>
+</select>
+</p>
+
+<p>
+<input
+type="checkbox"
+id="termos"
+name="termos"
+required>
+
+<label for="termos">
+Aceito os Termos de Uso
+</label>
+</p>
+
+<p>
+<button type="submit">Cadastrar</button>
+</p>
+
+</form>
+
+</main>
+
+<footer>
+
+<p>
+<a href="index.html">Voltar ao Login</a>
+</p>
+
+<p>&copy; 2026 Smart Control. Direitos Reservados.</p>
+
+</footer>
+
+</body>
+</html>
