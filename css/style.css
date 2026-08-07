@@ -10,13 +10,13 @@ min-height:100vh;
 display:flex;
 justify-content:center;
 align-items:center;
-background:linear-gradient(135deg,#0d7bb8,#0f4c81);
+background:linear-gradient(135deg,#56A1B9,#56A1B9);
 }
 
 input{
 width:100%;
 padding:14px;
-border:1px solid #dcdcdc;
+border:1px solid #B6D4E0;
 border-radius:10px;
 outline:none;
 font-size:15px;
