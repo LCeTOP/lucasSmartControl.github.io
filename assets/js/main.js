@@ -19,4 +19,10 @@ let fuso = -agora.getTimezoneOffset();
 let sinal = fuso >= 0 ? "+" : "-";
 let horasFuso = String(Math.floor(Math.abs(fuso) / 60)).padStart(2, "0");
 let minutosFuso = String(Math.abs(fuso) % 60).padStart(2, "0");
-let dataAtual  = `${diaSemana}, ${dia}/${mes}/${ano} = ${hora}:${minuto} (${sinal}${horasFuso}:${minutosFuso})`;
+let dataAtual  = `${diaSemana}, ${dia}/${mes}/${ano} - ${hora}:${minuto} (${sinal}${horasFuso}:${minutosFuso})`;
+const mensagem = document.querySelector("#mensagem-boas-vindas");
+if (mensagem) {
+    mensagem.textContent = `Vs ${usuario}! Hoje é ${dataAtual}`;
+}
+console.log(usuario);
+console.log(dataAtual)
