@@ -29,8 +29,8 @@
     }
 
     header h3 {
-    margin-left: 500px;
-    right: 100px;
+    margin-left: auto ;
+    margin-right: auto;
     background: #56A1B9;
     color: black;
     padding: 20px 40px; 
