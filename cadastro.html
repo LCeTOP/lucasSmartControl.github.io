@@ -3,73 +3,68 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cadastro - Smart Control</title>
+
+<title>Smart Control</title>
+
+<link rel="stylesheet" href="css/cadastro.css">
+<link rel="stylesheet" href="css/style-cadastro.css">
 </head>
+
 <body>
 
-<header>
-<img src="assets/imagens/LOGO.png" alt="Logo Smart Control" width="120">
-<h1></h1>
-<h2>Cadastro de Usuário</h2>
-</header>
-
 <main>
+<div class="login-card">
+<img src="assets/imagens/LOGO.png" alt="Logo Smart Control" class="logo">
 
-<form action="dashboard.html">
+<h2>Cadastro</h2>
 
-<p>
-<label for="nome">Nome Completo:</label><br>
-<input
-type="text"
-id="nome"
-name="nome"
-required>
-</p>
+<p>Conclua o cadastro para acessar sua conta.</p>
 
-<p>
-<label for="email">E-mail Corporativo:</label><br>
+<form>
+
+<label for="usuario">Email</label>
+
 <input
 type="email"
-id="email"
-name="email"
-placeholder="exemplo@empresa.com"
+id="usuario"
+placeholder="Cadastre seu email"
 required>
-</p>
 
-<p>
-<label for="senha">Senha:</label><br>
+<label for="senha">Senha</label>
+
 <input
 type="password"
 id="senha"
-name="senha"
-minlength="8"
+placeholder="Defina sua senha"
 required>
-</p>
 
-<p>
+<label for="usuario">Senha</label>
+
 <input
-type="checkbox"
-id="termos"
-name="termos"
+type="password"
+id="senha"
+placeholder="Confirme sua senha"
 required>
 
-<label for="termos">
-Aceito os Termos de Uso
-</label>
-</p>
+<div class="opcoes">
 
-<p>
-<a href="dashboard.html">Cadastrar</a>
-</p>
+<div>
+<input type="checkbox" id="lembrar">
+<label for="lembrar">Termos de uso</label>
+</div>
+
+</div>
+
+<a href="dashboard.html" class="btn">Cadastrar</a>
+
 
 </form>
 
+
+</div>
 </main>
 
 <footer>
-
-<p>
-<a href="index.html">Voltar ao Login</a></p>
 
 <h3>Nossa Localização</h3>
 
@@ -78,8 +73,5 @@ Aceito os Termos de Uso
  <p>©2026 Smart Control. Direitos Reservados.</p>
 
 </footer>
-
-<script src="assets/js/main.js"></script>
-
 </body>
 </html>

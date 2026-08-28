@@ -1,0 +1,83 @@
+.container-perfil {
+    background-color: #B6D4E0;
+    width: 340px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 12px;
+    color: #000000;
+}
+
+.topo-perfil {
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #333333;
+    padding-bottom: 15px;
+}
+
+div>img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    object-fit: scale-down;
+    display: block;
+    margin: 0 auto 10px auto;
+    
+}
+
+h2 {
+    font-size: 20px;
+}
+
+.status {
+    color: #030303;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.secao {
+    background-color: #56A1B9;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 14px;
+    color: #020202;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+
+div>h4 {
+    width: 100%;
+    padding: 12px;
+    background-color: #B6D4E0;
+    color: #000000;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    display: block;
+}
+.voltar {
+    width: 100%;
+    padding: 12px;
+    background-color: #000000;
+    color: #B6D4E0;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    display: block;
+}
+
+

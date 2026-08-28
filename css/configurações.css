@@ -1,0 +1,74 @@
+.container-config {
+    background-color: #B6D4E0;
+    width: 340px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 12px;
+    color: #000000;
+}
+
+.topo-config {
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #B6D4E0;
+    padding-bottom: 15px;
+}
+
+.topo-config .logo {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+.secao {
+    background-color: #56A1B9;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 14px;
+    color: #000000;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+
+.item-opcao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    color: #dddddd;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.item-opcao input {
+    width: 18px;
+    height: 18px;
+    accent-color: #020202;
+    cursor: pointer;
+}
+
+.botao-voltar {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #2241f3;
+    color: #ffffff;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    box-sizing: border-box;
+}
+
+.botao-voltar:hover {
+    background-color: #e60000;
+}
