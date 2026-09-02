@@ -311,3 +311,16 @@
     
     
     }
+
+body,header,nav,main,.card,table{transition:background .4s,color .4s;}
+#campoBusca{width:100%;padding:10px;margin:15px 0;border-radius:8px;border:1px solid #ccc;}
+#temaBtn{padding:8px 14px;border:none;border-radius:8px;cursor:pointer;background:#222;color:#fff;margin-right:15px;}
+.dark-theme{background:#121212!important;color:#f1f1f1;}
+.dark-theme header,.dark-theme nav,.dark-theme .card,.dark-theme table{background:#1f1f1f;color:#f1f1f1;}
+.dark-theme a,.dark-theme th,.dark-theme td{color:#f1f1f1;}
+@media (max-width:768px){
+ nav{transform:translateX(-100%);transition:transform .3s;}
+ nav.menu-aberto{transform:translateX(0);}
+ main{margin-left:0;}
+ #menuToggle{cursor:pointer;}
+}

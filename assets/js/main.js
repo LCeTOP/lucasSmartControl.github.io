@@ -26,3 +26,28 @@ if (mensagem) {
 }
 console.log(usuario);
 console.log(dataAtual)
+
+const campoBusca=document.getElementById("campoBusca");
+if(campoBusca){
+ const linhas=document.querySelectorAll("tbody tr");
+ campoBusca.addEventListener("input",()=>{
+  const termo=campoBusca.value.toLowerCase();
+  linhas.forEach(l=>{
+    l.style.display=l.textContent.toLowerCase().includes(termo)?"":"none";
+  });
+ });
+}
+
+const temaBtn=document.getElementById("temaBtn");
+if(temaBtn){
+ temaBtn.addEventListener("click",()=>{
+  document.body.classList.toggle("dark-theme");
+  temaBtn.textContent=document.body.classList.contains("dark-theme")?"☀️ Light Mode":"🌙 Dark Mode";
+ });
+}
+
+const menu=document.querySelector("nav");
+const menuToggle=document.getElementById("menuToggle");
+if(menuToggle&&menu){
+ menuToggle.addEventListener("click",()=>menu.classList.toggle("menu-aberto"));
+}
