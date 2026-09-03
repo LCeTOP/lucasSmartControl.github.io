@@ -1,326 +1,422 @@
 .dashboard {
-    display: block;
-    background: #f5f5f5;
-    padding-top: 80px;
-    }
-    
-    header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 80px;
-    z-index: 1000;
-    
-    background: #B6D4E0;
-    
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-    padding: 10px 25px;
-    }
-    
-    header img {
-    width: 80px;
-    }
-    
-    header h2 {
-    margin-left: 25px;
-    }
+display: block;
+background: #f5f5f5;
+padding-top: 80px;
+}
 
-    header h3 {
-    margin-left: auto ;
-    margin-right: auto;
-    background: #56A1B9;
-    color: black;
-    padding: 20px 40px; 
-    border-radius: 24px;
-    font-size: 15px;
-        
-    }
-    
-    .usuario {
-    margin-left: auto;
-    }
-    
-    nav {
-    position: fixed;
-    
-    top: 80px;
-    left: 0;
-    bottom: 0;
-    
-    width: 190px;
-    
-    background: #56A1B9;
-    
-    padding: 25px 20px;
-    }
-    
-    nav h3 {
-    margin-bottom: 20px;
-    }
-    
-    nav ul {
-    list-style: none;
-    
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    }
-    
-    nav li {
-    margin-bottom: 0;
-    }
-    
-    nav a {
-    color: #222;
-    }
-    
-    .sair {
-    position: absolute;
-    
-    bottom: 25px;
-    left: 20px;
-    
-    padding: 10px 25px;
-    
-    border: 1px solid #333;
-    border-radius: 5px;
-    }
-    
-    main {
-    margin-left: 190px;
-    padding: 30px;
-    }
-    
-    main > h2 {
-    margin-bottom: 25px;
-    }
-    
-    .cards {
-    display: grid;
-    
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    
-    gap: 1.5rem;
-    
-    margin-bottom: 35px;
-    }
-    
-    .card {
-    position: relative;
-    
-    background: white;
-    
-    padding: 25px;
-    
-    border-radius: 12px;
-    
-    box-shadow: 0 3px 10px rgba(0,0,0,.10);
-    }
-    
-    .card h3 {
-    font-size: 16px;
-    margin-bottom: 10px;
-    }
-    
-    .card strong {
-    font-size: 30px;
-    }
-    
-    .card p {
-    margin-top: 5px;
-    }
-    
-    .badge {
-    position: absolute;
-    
-    top: 10px;
-    right: 10px;
-    
-    background: #d7f5dc;
-    
-    color: green;
-    
-    padding: 5px 8px;
-    
-    border-radius: 10px;
-    
-    font-size: 11px;
-    }
-    
-    .badge.alerta {
-    background: #ffe0c0;
-    color: #d66a00;
-    }
-    
-    .relatorios {
-    display: flex;
-    gap: 80px;
-    
-    background: white;
-    
-    padding: 25px;
-    
-    margin-bottom: 30px;
-    }
-    
-    .relatorios div {
-    width: 50%;
-    }
-    
-    .relatorios h2 {
-    margin-bottom: 25px;
-    }
-    
-    .numeros {
-    margin-top: 30px;
-    }
-    
-    .ultimos {
-    background: white;
-    
-    padding: 25px;
-    
-    overflow-x: auto;
-    }
-    
-    .ultimos h2 {
-    margin-bottom: 20px;
-    }
-    
-    table {
-    width: 100%;
-    
-    border-collapse: collapse;
-    }
-    
-    th,
-    td {
-    padding: 12px;
-    
-    text-align: left;
-    
-    border-bottom: 1px solid #ddd;
-    }
-    
-    th {
-    background: #eef5f8;
-    }
-    
-    footer {
-    margin-left: 190px;
-    
-    padding: 20px;
-    
-    text-align: center;
-    }
-    
-    @media (max-width: 700px) {
-    
-    header {
-    padding: 10px 15px;
-    }
-    
-    header img {
-    width: 60px;
-    }
-    
-    header h2 {
-    font-size: 18px;
-    margin-left: 10px;
-    }
-    
-    .usuario {
-    font-size: 13px;
-    }
-    
-    nav {
-    width: 150px;
-    }
-    
-    main {
-    margin-left: 150px;
-    padding: 20px;
-    }
-    
-    .relatorios {
-    flex-direction: column;
-    gap: 25px;
-    }
-    
-    .relatorios div {
-    width: 100%;
-    }
-    
-    footer {
-    margin-left: 150px;
-    }
-    
-    }
-    
-    @media (max-width: 500px) {
-    
-    header {
-    height: 70px;
-    }
-    
-    .dashboard {
-    padding-top: 70px;
-    }
-    
-    nav {
-    top: 70px;
-    width: 120px;
-    padding: 20px 10px;
-    }
-    
-    nav h3 {
-    font-size: 16px;
-    }
-    
-    nav a {
-    font-size: 13px;
-    }
-    
-    main {
-    margin-left: 120px;
-    padding: 15px;
-    }
-    
-    main > h2 {
-    font-size: 20px;
-    }
-    
-    .usuario {
-    font-size: 11px;
-    }
-    
-    .relatorios {
-    padding: 15px;
-    }
-    
-    .ultimos {
-    padding: 15px;
-    }
-    
-    footer {
-    margin-left: 120px;
-    }
-    
-    
-    }
+header {
+position: fixed;
+top: 0;
+width: 100%;
+height: 80px;
+z-index: 1000;
+background: #B6D4E0;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px 25px;
+}
 
-body,header,nav,main,.card,table{transition:background .4s,color .4s;}
-#campoBusca{width:100%;padding:10px;margin:15px 0;border-radius:8px;border:1px solid #ccc;}
-#temaBtn{padding:8px 14px;border:none;border-radius:8px;cursor:pointer;background:#222;color:#fff;margin-right:15px;}
-.dark-theme{background:#121212!important;color:#f1f1f1;}
-.dark-theme header,.dark-theme nav,.dark-theme .card,.dark-theme table{background:#1f1f1f;color:#f1f1f1;}
-.dark-theme a,.dark-theme th,.dark-theme td{color:#f1f1f1;}
-@media (max-width:768px){
- nav{transform:translateX(-100%);transition:transform .3s;}
- nav.menu-aberto{transform:translateX(0);}
- main{margin-left:0;}
- #menuToggle{cursor:pointer;}
+header img {
+width: 80px;
+}
+
+header h2 {
+margin-left: 25px;
+}
+
+header h3 {
+margin-left: auto;
+margin-right: auto;
+background: #56A1B9;
+color: black;
+padding: 20px 40px;
+border-radius: 24px;
+font-size: 15px;
+}
+
+header div {
+margin-left: 5px;
+}
+
+.usuario {
+margin-left: auto;
+}
+
+nav {
+position: fixed;
+top: 80px;
+left: 0;
+bottom: 0;
+width: 190px;
+background: #56A1B9;
+padding: 25px 20px;
+}
+
+nav h3 {
+margin-bottom: 20px;
+}
+
+nav ul {
+list-style: none;
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+
+nav li {
+margin-bottom: 0;
+}
+
+nav a {
+color: #222;
+}
+
+.sair {
+position: absolute;
+bottom: 25px;
+left: 20px;
+padding: 10px 25px;
+border: 1px solid #333;
+border-radius: 5px;
+}
+
+main {
+margin-left: 190px;
+padding: 30px;
+}
+
+main > h2 {
+margin-bottom: 25px;
+}
+
+.cards {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 1.5rem;
+margin-bottom: 35px;
+}
+
+.card {
+position: relative;
+background: white;
+padding: 25px;
+border-radius: 12px;
+box-shadow: 0 3px 10px rgba(0, 0, 0, .10);
+}
+
+.card h3 {
+font-size: 16px;
+margin-bottom: 10px;
+}
+
+.card strong {
+font-size: 30px;
+}
+
+.card p {
+margin-top: 5px;
+}
+
+.badge {
+position: absolute;
+top: 10px;
+right: 10px;
+background: #d7f5dc;
+color: green;
+padding: 5px 8px;
+border-radius: 10px;
+font-size: 11px;
+}
+
+.badge.alerta {
+background: #ffe0c0;
+color: #d66a00;
+}
+
+.relatorios {
+display: flex;
+gap: 80px;
+background: white;
+padding: 25px;
+margin-bottom: 30px;
+}
+
+.relatorios div {
+width: 50%;
+}
+
+.relatorios h2 {
+margin-bottom: 25px;
+}
+
+.numeros {
+margin-top: 30px;
+}
+
+.ultimos {
+background: white;
+padding: 25px;
+overflow-x: auto;
+}
+
+.ultimos h2 {
+margin-bottom: 20px;
+}
+
+#campoBusca {
+width: 100%;
+padding: 10px;
+margin: 15px 0;
+border-radius: 8px;
+border: 1px solid #ccc;
+box-sizing: border-box;
+}
+
+table {
+width: 100%;
+border-collapse: collapse;
+}
+
+th,
+td {
+padding: 12px;
+text-align: left;
+border-bottom: 1px solid #ddd;
+}
+
+th {
+background: #eef5f8;
+}
+
+footer {
+margin-left: 190px;
+padding: 20px;
+text-align: center;
+}
+
+#temaBtn {
+padding: 8px 14px;
+border: none;
+border-radius: 8px;
+cursor: pointer;
+background: #222;
+color: white;
+margin-right: 15px;
+transition: background .4s, color .4s;
+}
+
+body,
+header,
+nav,
+main,
+.card,
+.relatorios,
+.ultimos,
+table,
+th,
+td,
+input,
+footer {
+transition: background-color .4s ease, color .4s ease, border-color .4s ease;
+}
+
+body.dark-theme {
+background: #121212;
+color: #f1f1f1;
+}
+
+body.dark-theme header {
+background: #181818;
+color: #f1f1f1;
+}
+
+body.dark-theme nav {
+background: #181818;
+color: #f1f1f1;
+}
+
+body.dark-theme nav h3 {
+color: #f1f1f1;
+}
+
+body.dark-theme nav a {
+color: #f1f1f1;
+}
+
+body.dark-theme .sair {
+color: #f1f1f1;
+border-color: #777;
+}
+
+body.dark-theme header h3 {
+background: #56A1B9;
+color: #111;
+}
+
+body.dark-theme .card {
+background: #1f1f1f;
+color: #f1f1f1;
+}
+
+body.dark-theme .relatorios {
+background: #1f1f1f;
+color: #f1f1f1;
+}
+
+body.dark-theme .relatorios h2,
+body.dark-theme .relatorios p {
+color: #f1f1f1;
+}
+
+body.dark-theme .ultimos {
+background: #1f1f1f;
+color: #f1f1f1;
+}
+
+body.dark-theme .ultimos h2 {
+color: #f1f1f1;
+}
+
+body.dark-theme table {
+background: #1f1f1f;
+color: #f1f1f1;
+}
+
+body.dark-theme th {
+background: #2a2a2a;
+color: white;
+}
+
+body.dark-theme td {
+color: #f1f1f1;
+border-bottom-color: #444;
+}
+
+body.dark-theme #campoBusca {
+background: #2a2a2a;
+color: #f1f1f1;
+border-color: #555;
+}
+
+body.dark-theme #campoBusca::placeholder {
+color: #aaa;
+}
+
+body.dark-theme a {
+color: #7ec8ff;
+}
+
+body.dark-theme #temaBtn {
+background: #f1f1f1;
+color: #111;
+}
+
+body.dark-theme footer {
+color: #f1f1f1;
+}
+
+#menuToggle {
+cursor: pointer;
+}
+
+@media (max-width: 768px) {
+nav {
+transform: translateX(-100%);
+transition: transform .3s ease;
+}
+
+nav.menu-aberto {
+transform: translateX(0);
+}
+}
+
+@media (max-width: 700px) {
+header {
+padding: 10px 15px;
+}
+
+header img {
+width: 60px;
+}
+
+header h2 {
+font-size: 18px;
+margin-left: 10px;
+}
+
+.usuario {
+font-size: 13px;
+}
+
+nav {
+width: 150px;
+}
+
+main {
+margin-left: 150px;
+padding: 20px;
+}
+
+.relatorios {
+flex-direction: column;
+gap: 25px;
+}
+
+.relatorios div {
+width: 100%;
+}
+
+footer {
+margin-left: 150px;
+}
+}
+
+@media (max-width: 500px) {
+header {
+height: 70px;
+}
+
+.dashboard {
+padding-top: 70px;
+}
+
+nav {
+top: 70px;
+width: 120px;
+padding: 20px 10px;
+}
+
+nav h3 {
+font-size: 16px;
+}
+
+nav a {
+font-size: 13px;
+}
+
+main {
+margin-left: 120px;
+padding: 15px;
+}
+
+main > h2 {
+font-size: 20px;
+}
+
+.usuario {
+font-size: 11px;
+}
+
+.relatorios {
+padding: 15px;
+}
+
+.ultimos {
+padding: 15px;
+}
+
+footer {
+margin-left: 120px;
+}
 }

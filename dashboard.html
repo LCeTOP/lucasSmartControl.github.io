@@ -4,9 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Dashboard - Smart Control</title>
-
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/dashboard.css">
 </head>
@@ -14,20 +12,18 @@
 <body class="dashboard">
 
 <header>
-
 <img src="assets/imagens/LOGO.png" alt="Logo Smart Control">
 
 <h2 id="menuToggle">☰ Dashboard</h2>
-
+<div>
+<button id="temaBtn">🌙 Dark Mode</button>
+</div>
 <h3 id="mensagem-boas-vindas"></h3>
 
-<button id="temaBtn">🌙 Dark Mode</button>
-<div class="usuario">🔔/🧑-Ronaldo</div>
-
+<h4 class="usuario">🔔/🧑-Ronaldo</h4>
 </header>
 
 <nav>
-
 <h3>Menu</h3>
 
 <ul>
@@ -38,7 +34,6 @@
 </ul>
 
 <a href="index.html" class="sair">⇥ Sair</a>
-
 </nav>
 
 <main>
@@ -48,51 +43,31 @@
 <section class="cards">
 
 <div class="card">
-
 <span class="badge">Ativo</span>
-
 <h3>Produção Hoje</h3>
-
 <strong>320</strong>
-
 <p>peças</p>
-
 </div>
 
 <div class="card">
-
 <span class="badge">Ativo</span>
-
 <h3>Máquinas Ativas</h3>
-
 <strong>18</strong>
-
 <p>unidades</p>
-
 </div>
 
 <div class="card">
-
 <span class="badge">Ativo</span>
-
 <h3>Funcionários</h3>
-
 <strong>45</strong>
-
 <p>ativos</p>
-
 </div>
 
 <div class="card">
-
 <span class="badge alerta">3 Alertas</span>
-
 <h3>Alertas</h3>
-
 <strong>2</strong>
-
 <p>pendentes</p>
-
 </div>
 
 </section>
@@ -100,19 +75,18 @@
 <section class="relatorios">
 
 <div>
-
 <h2>Produção - Últimos 7 dias</h2>
 
-<p>Seg &nbsp; Ter &nbsp; Qua &nbsp; Qui &nbsp; Sex &nbsp; Sáb &nbsp; Dom</p>
+<p>
+Seg &nbsp; Ter &nbsp; Qua &nbsp; Qui &nbsp; Sex &nbsp; Sáb &nbsp; Dom
+</p>
 
 <p class="numeros">
 200 &nbsp; 250 &nbsp; 300 &nbsp; 320 &nbsp; 370 &nbsp; 320 &nbsp; 420
 </p>
-
 </div>
 
 <div>
-
 <h2>Produção por Máquina</h2>
 
 <p>🔵 Máquina 01 - 35%</p>
@@ -120,7 +94,6 @@
 <p>🟣 Máquina 03 - 20%</p>
 <p>🟠 Máquina 04 - 15%</p>
 <p>⚪ Outros - 5%</p>
-
 </div>
 
 </section>
@@ -128,7 +101,12 @@
 <section class="ultimos">
 
 <h2>Últimos Relatórios</h2>
-<input type="text" id="campoBusca" placeholder="Buscar relatório, tipo ou responsável...">
+
+<input
+type="text"
+id="campoBusca"
+placeholder="Buscar relatório, tipo ou responsável..."
+>
 
 <table>
 
@@ -193,7 +171,6 @@
 </main>
 
 <footer>
-
 <p>
 <a href="https://classroom.google.com/h/st" target="_blank">
 Portal do Aluno
@@ -201,7 +178,6 @@ Portal do Aluno
 </p>
 
 <p>©2026 Smart Control. Direitos Reservados.</p>
-
 </footer>
 
 <script src="assets/js/main.js"></script>
