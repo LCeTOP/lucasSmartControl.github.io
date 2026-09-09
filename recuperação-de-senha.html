@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Smart Control</title>
-
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/recuperação-de-senha.css">
 </head>
@@ -22,19 +21,21 @@
 
 <form action="index.html">
 
-<label for="usuario">Senha</label>
+<label for="senha">Senha</label>
 
 <input
 type="password"
 id="senha"
+name="senha"
 placeholder="Digite a nova senha"
 required>
 
-<label for="senha">Confirmar Senha</label>
+<label for="confirmar-senha">Confirmar Senha</label>
 
 <input
 type="password"
-id="senha"
+id="confirmar-senha"
+name="confirmar-senha"
 placeholder="Digite sua senha novamente"
 required>
 
@@ -47,6 +48,8 @@ required>
 </footer>
 
 </main>
+
+<script src="assets/js/main.js"></script>
 
 </body>
 </html>

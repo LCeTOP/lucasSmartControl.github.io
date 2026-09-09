@@ -1,4 +1,33 @@
-let usuario = prompt("Digite seu nome e sobrenome:");
+const temaSalvo = localStorage.getItem("tema");
+
+if (temaSalvo === "dark") {
+document.body.classList.add("dark-theme");
+}
+
+function atualizarBotaoTema() {
+const temaBtn = document.getElementById("temaBtn");
+
+if (!temaBtn) {
+return;
+}
+
+if (document.body.classList.contains("dark-theme")) {
+temaBtn.textContent = "☀️ Light Mode";
+} else {
+temaBtn.textContent = "🌙 Dark Mode";
+}
+}
+
+function exibirSaudacao() {
+const mensagem = document.querySelector("#mensagem-boas-vindas");
+
+if (!mensagem) {
+return;
+}
+
+const nome = prompt("Digite seu nome:");
+
+const usuario = `${nome}`.trim();
 
 const agora = new Date();
 
@@ -12,35 +41,32 @@ const dias = [
 "Sábado"
 ];
 
-let ano = agora.getFullYear();
-let mes = String(agora.getMonth() + 1).padStart(2, "0");
-let diaSemana = dias[agora.getDay()];
-let dia = String(agora.getDate()).padStart(2, "0");
-let hora = String(agora.getHours()).padStart(2, "0");
-let minuto = String(agora.getMinutes()).padStart(2, "0");
+const diaSemana = dias[agora.getDay()];
+const dia = String(agora.getDate()).padStart(2, "0");
+const mes = String(agora.getMonth() + 1).padStart(2, "0");
+const ano = agora.getFullYear();
 
-let fuso = -agora.getTimezoneOffset();
-let sinal = fuso >= 0 ? "+" : "-";
+const hora = String(agora.getHours()).padStart(2, "0");
+const minuto = String(agora.getMinutes()).padStart(2, "0");
 
-let horasFuso = String(
-Math.floor(Math.abs(fuso) / 60)
-).padStart(2, "0");
+const fuso = -agora.getTimezoneOffset();
+const sinal = fuso >= 0 ? "+" : "-";
+const horasFuso = String(Math.floor(Math.abs(fuso) / 60)).padStart(2, "0");
+const minutosFuso = String(Math.abs(fuso) % 60).padStart(2, "0");
 
-let minutosFuso = String(
-Math.abs(fuso) % 60
-).padStart(2, "0");
+const fusoHorario = `${sinal}${horasFuso}:${minutosFuso}`;
 
-let dataAtual =
-`${diaSemana}, ${dia}/${mes}/${ano} - ${hora}:${minuto} (${sinal}${horasFuso}:${minutosFuso})`;
+const dataAtual = `${diaSemana}, ${dia}/${mes}/${ano} - ${hora}:${minuto} (${fusoHorario})`;
 
-const mensagem = document.querySelector("#mensagem-boas-vindas");
+mensagem.textContent = `Olá, ${usuario}! Hoje é ${dataAtual}`;
 
-if (mensagem) {
-mensagem.textContent = `Vs ${usuario}! Hoje é ${dataAtual}`;
+console.log("Nome:", nome);
+console.log("Usuário:", usuario);
+console.log("Data atual:", dataAtual);
+console.log("Elemento da mensagem:", mensagem);
 }
 
-console.log(usuario);
-console.log(dataAtual);
+exibirSaudacao();
 
 const campoBusca = document.getElementById("campoBusca");
 
@@ -68,16 +94,15 @@ if (temaBtn) {
 temaBtn.addEventListener("click", function () {
 document.body.classList.toggle("dark-theme");
 
-const modoEscuro =
-document.body.classList.contains("dark-theme");
+const modoEscuro = document.body.classList.contains("dark-theme");
 
-if (modoEscuro) {
-temaBtn.textContent = "☀️ Light Mode";
-} else {
-temaBtn.textContent = "🌙 Dark Mode";
-}
+localStorage.setItem("tema", modoEscuro ? "dark" : "light");
+
+atualizarBotaoTema();
 });
 }
+
+atualizarBotaoTema();
 
 const menu = document.querySelector("nav");
 const menuToggle = document.getElementById("menuToggle");

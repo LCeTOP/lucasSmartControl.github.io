@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Smart Control</title>
-
 <link rel="stylesheet" href="css/cadastro.css">
 <link rel="stylesheet" href="css/style-cadastro.css">
 </head>
@@ -14,6 +13,7 @@
 
 <main>
 <div class="login-card">
+
 <img src="assets/imagens/LOGO.png" alt="Logo Smart Control" class="logo">
 
 <h2>Cadastro</h2>
@@ -27,6 +27,7 @@
 <input
 type="email"
 id="usuario"
+name="usuario"
 placeholder="Cadastre seu email"
 required>
 
@@ -35,31 +36,31 @@ required>
 <input
 type="password"
 id="senha"
+name="senha"
 placeholder="Defina sua senha"
 required>
 
-<label for="usuario">Senha</label>
+<label for="confirmar-senha">Confirmar senha</label>
 
 <input
 type="password"
-id="senha"
+id="confirmar-senha"
+name="confirmar-senha"
 placeholder="Confirme sua senha"
 required>
 
 <div class="opcoes">
 
 <div>
-<input type="checkbox" id="lembrar">
-<label for="lembrar">Termos de uso</label>
+<input type="checkbox" id="termos" name="termos" required>
+<label for="termos">Termos de uso</label>
 </div>
 
 </div>
 
 <input type="submit" class="btn" value="Cadastrar">
 
-
 </form>
-
 
 </div>
 </main>
@@ -68,10 +69,13 @@ required>
 
 <h3>Nossa Localização</h3>
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d926.4282383534488!2d-43.352065530407145!3d-21.752651253147107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x989c99d4a74171%3A0x78e90676e4f510a2!2sR.%20Jos%C3%A9%20Calil%20Ahouagi%2C%20798%20-%20Centro%2C%20Juiz%20de%20Fora%20-%20MG%2C%2036015-510!5e0!3m2!1spt-BR!2sbr!4v1785872638663!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d926.4282383534488!2d-43.352065530407145!3d-21.752651253147107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x989c99d4a74171%3A0x78e90676e4f510a2!2sR.%20Jos%C3%A9%20Calil%20Ahouagi%2C%20798%20-%20Centro%2C%20Juiz%20de%20Fora%20-%20MG%2C%2036015-510!5e0!3m2!1spt-BR!2sbr!4v1785872638663!5m2!1spt-BR!2sbr" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
 
- <p>©2026 Smart Control. Direitos Reservados.</p>
+<p>©2026 Smart Control. Direitos Reservados.</p>
 
 </footer>
+
+<script src="assets/js/main.js"></script>
+
 </body>
 </html>
