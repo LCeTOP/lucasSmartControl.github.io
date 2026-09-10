@@ -1,21 +1,30 @@
+.configuracoes-pagina {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
 .container-config {
     background-color: #B6D4E0;
-    width: 340px;
-    margin: 20px auto;
-    padding: 20px;
+    width: min(420px, 100%);
+    padding: 25px;
     border-radius: 12px;
     color: #000000;
+    box-shadow: 0 10px 30px rgba(0,0,0, .15);
 }
 
 .topo-config {
     text-align: center;
     margin-bottom: 20px;
-    border-bottom: 1px solid #B6D4E0;
+    border-color: 1px solid #8fb5c2;
     padding-bottom: 15px;
 }
 
 .topo-config .logo {
-    width: 80px;
+    width: 200px;
+    max-width: 100%;
     margin-bottom: 10px;
 }
 
@@ -30,7 +39,7 @@ h2 {
     margin-bottom: 20px;
 }
 
-h3 {
+.secao h3 {
     font-size: 14px;
     color: #000000;
     margin-bottom: 12px;
@@ -41,17 +50,53 @@ h3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 13px;
-    color: #dddddd;
-    margin-bottom: 10px;
+    gap: 15px;
+    font-size: 14px;
+    color: #111;
+    margin-bottom: 12px;
     cursor: pointer;
+}
+
+.item-opcao:last-child {
+    margin-bottom: 0;
 }
 
 .item-opcao input {
     width: 18px;
     height: 18px;
+    margin: 0;
     accent-color: #020202;
     cursor: pointer;
+}
+
+#temaBtn {
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+    background-color: #222;
+    color: #fff;
+}
+
+body.dark-theme .container-config {
+    background-color: #1f1f1f;
+    color: #f1f1f1;
+}
+
+body.dark-theme .topo-config {
+    border-color: #444;
+}
+
+body.dark-theme .secao {
+    background-color: #2b5966;
+}
+
+body.dark-theme .secao h3, body.dark-theme .item-opcao {
+    color: #f1f1f1;
+}
+
+body.dark-theme #temaBtn {
+    background-color: #f1f1f1;
+    color: #111;
 }
 
 .botao-voltar {
@@ -70,5 +115,16 @@ h3 {
 }
 
 .botao-voltar:hover {
-    background-color: #e60000;
+    background-color: #1833c8;
+    text-decoration: none;
+}
+
+@media (max-width: 500px) {
+    .configuracoes-pagina {
+        padding: 15px;
+    }
+
+    .container-config {
+        padding: 20px;
+    }
 }

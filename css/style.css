@@ -1,72 +1,91 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    }
-    
-    body {
-    min-height: 100vh;
-    
-    display: flex;
-    
-    justify-content: center;
-    
-    align-items: center;
-    
-    background: linear-gradient(135deg, #56A1B9, #56A1B9);
-    }
-    
-    input {
-    width: 100%;
-    
-    padding: 14px;
-    
-    border: 1px solid #B6D4E0;
-    
-    border-radius: 10px;
-    
-    outline: none;
-    
-    font-size: 15px;
-    }
-    
-    input:focus {
-    border: 1px solid #3f5efb;
-    }
-    
-    button {
-    width: 100%;
-    
-    padding: 15px;
-    
-    border: none;
-    
-    border-radius: 12px;
-    
-    background: #3454f5;
-    
-    color: white;
-    
-    font-size: 22px;
-    
-    font-weight: bold;
-    
-    cursor: pointer;
-    
-    transition: .3s;
-    }
-    
-    button:hover {
-    background: #2444dc;
-    }
-    
-    a {
-    color: #3454f5;
-    
-    text-decoration: none;
-    }
-    
-    a:hover {
-    text-decoration: underline;
-    }
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 20px;
+background: linear-gradient(135deg, #56A1B9, #56A1B9);
+transition: background-color .4s ease, color .4s ease;
+}
+
+input {
+width: 100%;
+padding: 14px;
+border: 1px solid #B6D4E0;
+border-radius: 10px;
+outline: none;
+font-size: 15px;
+}
+
+input:focus {
+border: 1px solid #3f5efb;
+}
+
+button {
+width: 100%;
+padding: 15px;
+border: none;
+border-radius: 12px;
+background: #3454f5;
+color: white;
+font-size: 22px;
+font-weight: bold;
+cursor: pointer;
+transition: .3s;
+}
+
+button:hover {
+background: #2444dc;
+}
+
+a {
+color: #3454f5;
+text-decoration: none;
+}
+
+a:hover {
+text-decoration: underline;
+}
+
+body.dark-theme {
+background: #121212;
+color: #f1f1f1;
+}
+
+body.dark-theme input {
+background: #2a2a2a;
+color: #f1f1f1;
+border-color: #555;
+}
+
+body.dark-theme input::placeholder {
+color: #aaa;
+}
+
+body.dark-theme .login-card,
+body.dark-theme .recuperação-card,
+body.dark-theme .container-config,
+body.dark-theme .container-perfil {
+background: #1f1f1f;
+color: #f1f1f1;
+}
+
+body.dark-theme main p,
+body.dark-theme footer,
+body.dark-theme .status {
+color: #ccc;
+}
+
+@media (max-width: 600px) {
+body {
+padding: 15px;
+align-items: flex-start;
+}
+}

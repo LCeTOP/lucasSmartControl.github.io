@@ -1,106 +1,61 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    }
-    
-    .login-card {
-    
-    display: center;
-    
-    justify-content: center;
-    
-    align-items: center;
-    }
-    
-    body {
-    min-height: 100vh;
-    
-    display: center;
-    
-    justify-content: flex;
-    
-    align-items: flex;
-    
-    background: linear-gradient(135deg, #56A1B9, #56A1B9);
-    
-    }
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Arial, Helvetica, sans-serif;
+}
 
-    footer>iframe{
-        margin-top: 1rem;
-    }
-    
-    footer>h3 {
-        font-size: 20px;
-        color: black;
-    }
+body {
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+padding: 30px 20px;
+background: linear-gradient(135deg, #56A1B9, #56A1B9);
+}
 
-    footer>p {
-        margin-top: 1rem;
-        color: black
-    }
+main {
+width: 100%;
+display: flex;
+justify-content: center;
+}
 
-    footer {
-        margin-top: 10rem;
-    }
+footer {
+width: min(600px, 100%);
+margin-top: 40px;
+text-align: center;
+}
 
-    input {
-    width: 100%;
-    
-    padding: 14px;
-    
-    border: 1px solid #B6D4E0;
-    
-    border-radius: 10px;
-    
-    outline: none;
-    
-    font-size: 15px;
-    }
-    
-    input:focus {
-    border: 1px solid #3f5efb;
-    }
-    
-    button {
-    width: 100%;
-    
-    padding: 15px;
-    
-    border: none;
-    
-    border-radius: 12px;
-    
-    background: #3454f5;
-    
-    color: white;
-    
-    font-size: 22px;
-    
-    font-weight: bold;
-    
-    cursor: pointer;
-    
-    transition: .3s;
-    }
-    
-    button:hover {
-    background: #2444dc;
-    }
-    
-    a {
-    color: #3454f5;
-    
-    text-decoration: none;
-    }
-    
-    a:hover {
-    text-decoration: underline;
-    }
+footer iframe {
+width: 100%;
+max-width: 600px;
+height: 350px;
+margin-top: 1rem;
+border: 0;
+}
 
-    main{
-        display: flex;
-        justify-content: center;
-        margin-top: 4rem;
-    }
+footer h3 {
+font-size: 20px;
+color: black;
+}
+
+footer p {
+margin-top: 1rem;
+color: black;
+}
+
+body.dark-theme footer h3,
+body.dark-theme footer p {
+color: #f1f1f1;
+}
+
+@media (max-width: 600px) {
+body {
+padding: 20px 15px;
+}
+
+footer iframe {
+height: 280px;
+}
+}
