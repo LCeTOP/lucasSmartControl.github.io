@@ -1,10 +1,11 @@
 .container-perfil {
     background-color: #B6D4E0;
-    width: 340px;
+    width: min(420px, 100%);
     margin: 20px auto;
     padding: 20px;
     border-radius: 12px;
     color: #000000;
+    box-shadow: 0 10px 30px rgba(0,0,0,.15);
 }
 
 .topo-perfil {
@@ -14,13 +15,13 @@
     padding-bottom: 15px;
 }
 
-div>img {
-    width: 200px;
-    height: 200px;
-    border-radius: 100%;
-    object-fit: scale-down;
+.topo-perfil img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
     display: block;
-    margin: 0 auto 10px auto;
+    margin: 0 auto 10px;
     
 }
 
@@ -41,43 +42,64 @@ h2 {
     margin-bottom: 15px;
 }
 
-h3 {
+.secao h3 {
     font-size: 14px;
     color: #020202;
     margin-bottom: 10px;
     text-transform: uppercase;
 }
 
+.secao p {
+    margin-bottom: 8px;
+}
 
-div>h4 {
+.secao h4 {
     width: 100%;
     padding: 12px;
     background-color: #B6D4E0;
     color: #000000;
-    border: none;
     border-radius: 8px;
     font-size: 14px;
     font-weight: bold;
-    cursor: pointer;
     margin-top: 15px;
     margin-bottom: 10px;
     text-transform: uppercase;
-    display: block;
 }
+
 .voltar {
     width: 100%;
     padding: 12px;
     background-color: #000000;
     color: #B6D4E0;
-    border: none;
     border-radius: 8px;
     font-size: 14px;
     font-weight: bold;
-    cursor: pointer;
+    text-align: center;
     margin-top: 15px;
-    margin-bottom: 10px;
     text-transform: uppercase;
     display: block;
+}
+
+body.dark-theme .secao h4 {
+    background-color: #333;
+    color: #f1f1f1;
+}
+
+body.dark-theme .voltar {
+    background-color: #f1f1f1;
+    color: #111;
+}
+
+@media (max-width: 500px) {
+    .container-perfil {
+        margin: 10px auto;
+        padding: 18px;
+    }
+
+    .topo-perfil img {
+        width: 130px;
+        height: 130px;
+    }
 }
 
 
